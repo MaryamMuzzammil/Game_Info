@@ -1,0 +1,70 @@
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    /* display: contents; */
+}
+form.row.g-3.needs-validation {
+    padding: 50px 50px 80px 50px;
+}
+.contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(255, 221, 0, 0.7));
+    color: #fff;
+    border: 1px solid var(--yellow);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.contact-heading{
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.01rem !important;
+    color: var(--yellow)!important;
+   
+}
+.horizontal{
+    margin-bottom: 6rem !important;
+}
+h2{
+    color: var(--yellow);
+}
+hr:not([size]) {
+    height: 1px;
+    margin-bottom: 70px;
+}
+.hero {
+    width: 100%; /* Use full width and adjust with max-width */
+    height: 50vh; /* Use viewport height for responsiveness */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(225, 255, 0, 0.7)), url(../../images/g3.jpg);
+    opacity: 0.8;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive !important;
+    margin: 0 auto; /* Center the hero section */
+    position: relative;
+    margin-top: 90px;
+  }
+  .mainhero{
+    font-size: 60px;
+    color: #000000;
+    padding: 20px;
+    padding-top: 80px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: 40vh; /* Adjust height for smaller screens */
+    }
+    
+    h1 {
+      font-size: 8vw; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 10vw; /* Further adjust font size for mobile */
+    }
+  }

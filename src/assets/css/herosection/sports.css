@@ -1,0 +1,67 @@
+.sports-section{
+    padding: 80px 0px 30px 0!important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(20, 18, 18, 0.7)),url(../../images/bgs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.rounded-2 {
+    border-radius: 45px!important;
+}
+.sportGames img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+.common-heading{
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.01rem !important;
+    color: var(--yellow);
+    margin-bottom:20px ;
+    padding-top: 30px;
+}
+.common-title{
+    margin-bottom: 4.2rem;
+    color: #fff;
+}
+.icon-span {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: rgb(152, 0, 0);
+    padding-top: 8px;
+    text-decoration: none;
+    border:1px outside #ffc107;
+    transition: all ease-in-out 0.7s;
+}
+.icon-span:hover{
+color:var(--yellow);
+background: #000 !important;
+border:1px solid #ffc107;
+transition: all ease-in-out 0.7s;
+transform: scale(1.1);
+box-shadow: 7px 7px 47px -1px var(--yellow);
+-webkit-box-shadow: 7px 7px 47px -1px var(--yellow);
+-moz-box-shadow: 7px 7px 47px -1px var(--yellow);
+}
+.sportGames{
+ background: #000;
+color: #fff;
+margin-bottom: 3%;
+}
+.sportGames:hover{
+    box-shadow: 8px 7px 36px -7px rgba(222,255,0,0.53);
+    -webkit-box-shadow: 8px 7px 36px -7px rgba(222,255,0,0.53);
+    -moz-box-shadow: 8px 7px 36px -7px rgba(222,255,0,0.53);
+cursor: pointer;
+}
+.sports-section p{
+font-size: 18px;
+}
+h5.my-3.fw-normal {
+    color: var(--yellow);
+}
+hr:not([size]) {
+    height: 2px;
+    color: yellow;
+}

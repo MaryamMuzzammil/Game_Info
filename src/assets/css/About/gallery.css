@@ -1,0 +1,142 @@
+.gallery-wrapper {
+    padding: 2rem 7rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+    
+  }
+  div#gallery {
+    padding-bottom: 40px;
+    /* border: 1px solid yellow; */
+}
+  
+  /* Another way to do the same without declaring in the classes - remove h-x w-x from classes */
+  /* .gallery-wrapper {
+    padding: 2rem 10rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 300px);
+    grid-auto-rows: 200px;
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+  }
+   */
+  
+  .gallery-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    filter: drop-shadow(2px 2px 3px #333);
+  }
+  
+  .gallery-item .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+  }
+  
+  .gallery-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: all 400ms ease-in;
+    transform: scale(1);
+    -o-object-fit: cover;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 1s all ease;
+
+  }
+  
+  .gallery-item .image img:hover {
+    filter: grayscale(0%);
+    transition: all 1s ease;
+    transform: scale(1.5);
+    z-index: 2; 
+}
+  
+  
+  .w-1{
+    grid-column: span 1;
+  }
+  .w-2{
+    grid-column: span 2;
+  }
+  .w-3{
+    grid-column: span 3;
+  }
+  .w-4{
+    grid-column: span 4;
+  }
+  .w-5{
+    grid-column: span 5;
+  }
+  
+  .h-1{
+    grid-row: span 1;
+  }
+  .h-2{
+    grid-row: span 2;
+  }
+  .h-3{
+    grid-row: span 3;
+  }
+  .h-4{
+    grid-row: span 4;
+  }
+  .h-5{
+    grid-row: span 5;
+  }
+  
+  /* ***** LIGHTBOX EFFECT ***** */
+  
+  #lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .92);
+    display: none;
+  }
+  
+  #lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    /* border-radius: 1%; */
+    /* background-color: white; */
+    border: 0.2px solid silver;
+  }
+  
+  /* Generic Styles */
+  :root {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }  
+.heading{
+    text-align: center;
+    padding: 1rem;
+    background: -webkit-linear-gradient(130deg, rgba(255, 222, 35, 0.845),rgb(246, 255, 0));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    margin-top: 70px;
+
+  }
+  

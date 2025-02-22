@@ -1,0 +1,94 @@
+
+.about-section{
+    padding: 120px 0px 70px 0!important;
+    background-image: linear-gradient(rgba(159, 142, 48, 0.845),rgb(0, 0, 0));
+    position: relative;
+}
+.about-title {
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+.about-btn{
+    color: var(--yellow);
+    border-color:var(--yellow);
+    border: 1px solid var(--yellow);
+    background-color: var(--yellow);
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    transition: all ease-in-out 1s;
+    z-index: 222;
+    
+}
+.about-btn:hover{
+    color:var(--yellow);
+background: #000 !important;
+border:1px solid var(--yellow);
+transition: all ease-in-out 0.5s;
+box-shadow: 7px 7px 47px -1px var(--yellow);
+-webkit-box-shadow: 7px 7px 47px -1px var(--yellow);
+-moz-box-shadow: 7px 7px 47px -1px var(--yellow);
+}
+.about-section a {
+    text-decoration: none;
+    width: 40%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.about-section p{
+    font-size: 18px;
+    color: #fff;
+    margin: 0!important;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+    border-radius: 50px;
+    margin: 20px;
+   transition: all ease-in-out 0.5s;
+}
+.about-section img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 7px 7px 47px -1px var(--yellow);
+-webkit-box-shadow: 7px 7px 47px -1px var(--yellow);
+-moz-box-shadow: 7px 7px 47px -1px var(--yellow);
+}
+.custom-shape-divider-bottom-1725031319 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1725031319 svg {
+    position: relative;
+    display: block;
+    width: calc(122% + 1.3px);
+    height: 197px;
+}
+
+.custom-shape-divider-bottom-1725031319 .shape-fill {
+    fill: rgb(152, 152, 18);
+}
+h2.common-heading.fw-bolder.mb-4 {
+    color: rgb(255, 230, 0);
+}
+h1.fw-bolder.text-capitalize.common-heading{
+    color: rgb(255, 230, 0);
+}
+.col-12.col-md-12.col-lg-6.d-flex.flex-column.justify-content-center.align-items-start.aos-init.aos-animate {
+    margin-top: -90px;
+}
+a.text-capitalize.about-btn.btn-outline-warning {
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+}
