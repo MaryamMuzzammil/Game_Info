@@ -14,7 +14,7 @@ header {
     z-index: 2222;
     width: 100%;
 }
-nav{
+.navbar{
     height: 100px;
     background: #000;
     width: 100%;
