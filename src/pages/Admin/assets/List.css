@@ -1,0 +1,135 @@
+/* General Styling */
+.offer-container {
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    background: #222;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Heading */
+.offer-container h2 {
+    color: #ffe600;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-shadow: 1px 0px 4px white;
+}
+
+/* Create Button */
+.create-btn {
+    background: green;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.create-btn:hover {
+    background: #0a7a0a;
+}
+
+/* Table Styling */
+.offer-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #333;
+    margin-top: 10px;
+}
+
+.offer-table th {
+    background: #ffcb05cc;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.offer-table td {
+    background: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    border-bottom: 1px solid #555;
+    text-align: left;
+}
+
+/* Offer Image */
+.offer-img {
+    width: 120px !important;  /* !important lagane se override hoga */
+    height: 80px !important;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: block; /* Ensure it's not inline-restricted */
+}
+
+
+/* Buttons */
+.delete-btn, .edit-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 5px;
+}
+.crudbuttons{
+    display:flex ;
+}
+.delete-btn {
+    background: red;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+.edit-btn {
+    background: #ffe600;
+    color: white;
+}
+
+.edit-btn:hover {
+    background: #ffe600a1;
+}
+
+/* No Data Message */
+.no-data {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .offer-table {
+        font-size: 14px;
+    }
+
+    .offer-table th, .offer-table td {
+        padding: 10px;
+    }
+
+    .offer-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .create-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}

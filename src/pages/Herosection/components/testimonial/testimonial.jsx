@@ -1,65 +1,56 @@
 import { useState, useEffect } from "react";
-import '../../../../assets/css/herosection/testimonial.css';
-
-const testimonials = [
-  {
-    name: "Miyah Myles",
-    position: "Satisfied Visitor",
-    photo:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=707b9c33066bf8808c934c8ab394dff6",
-    text: "An incredible resource for sports fans! The content is always fresh, informative, and engaging. I love connecting with fellow enthusiasts here. Highly recommended!",
-  },
-  {
-    name: "June Cha",
-    position: "Satisfied Visitor",
-    photo: "https://randomuser.me/api/portraits/women/44.jpg",
-    text: "Fantastic sports website! Always up-to-date with the latest news and insights. A must-visit for any sports lover!",
-  },
-  {
-    name: "Iida Niskanen",
-    position: "Satisfied Visitor",
-    photo: "https://randomuser.me/api/portraits/women/68.jpg",
-    text: "Absolutely love this site! It’s my go-to for the latest sports updates and expert analysis. Highly recommend it!",
-  },
-  {
-    name: "Renee Sims",
-    position: "Satisfied Visitor",
-    photo: "https://randomuser.me/api/portraits/women/65.jpg",
-    text: "An amazing sports hub! Great insights and a lively community. I always find what I’m looking for!",
-  },
-  {
-    name: "Jonathan Nunfiez",
-    position: "Satisfied Visitor",
-    photo: "https://randomuser.me/api/portraits/men/43.jpg",
-    text: "This site is a game-changer! Reliable news and engaging content make it my top choice for sports updates.",
-  },
-  {
-    name: "Sasha Ho",
-    position: "Satisfied Visitor",
-    photo:
-      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb",
-    text: "A fantastic platform for sports fans! The coverage is thorough, and I appreciate the diverse perspectives offered.",
-  },
-  {
-    name: "Veeti Seppanen",
-    position: "Satisfied Visitor",
-    photo: "https://randomuser.me/api/portraits/men/97.jpg",
-    text: "Always a pleasure to visit! The articles are well-written and keep me informed about all my favorite teams.",
-  },
-];
+import { collection, getDocs, query, orderBy } from "firebase/firestore";
+import { db } from "../../../../Firebase/config";
+import "../../../../assets/css/herosection/testimonial.css";
 
 const Testimonial = () => {
+  const [testimonials, setTestimonials] = useState([]);
   const [index, setIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 9600);
+    const fetchTestimonials = async () => {
+      try {
+        const q = query(collection(db, "testimonials"), orderBy("uploadedAt", "asc"));
+        const res = await getDocs(q);
+        const testimonialArray = res.docs.map((doc) => ({
+          id: doc.id,
+          quote: doc.data().quote || "No Quote",
+          writer_name: doc.data().writer_name || "Anonymous",
+          writer_about: doc.data().writer_about || "No Information",
+          writer_picture: doc.data().writer_picture || "",
+        }));
 
-    return () => clearInterval(interval);
+        setTestimonials(testimonialArray);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching testimonials:", error);
+        setLoading(false);
+      }
+    };
+
+    fetchTestimonials();
   }, []);
 
-  const { name, position, photo, text } = testimonials[index];
+  useEffect(() => {
+    if (testimonials.length > 0) {
+      const interval = setInterval(() => {
+        setIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+      }, 9600);
+      
+      return () => clearInterval(interval);
+    }
+  }, [testimonials]);
+
+  if (loading) {
+    return <p>Loading testimonials...</p>;
+  }
+
+  if (testimonials.length === 0) {
+    return <p>No testimonials available.</p>;
+  }
+
+  const { quote, writer_name, writer_about, writer_picture } = testimonials[index];
 
   return (
     <section className="feedback">
@@ -77,18 +68,18 @@ const Testimonial = () => {
           data-aos-easing="linear"
           data-aos-duration="800"
         >
-          "{text}"
+          "{quote}"
         </p>
         <div className="user">
-          <img src={photo} alt={name} className="user-image" />
+          <img src={writer_picture} alt={writer_name} className="user-image" />
           <div
             className="user-details"
             data-aos="fade-right"
             data-aos-easing="linear"
             data-aos-duration="800"
           >
-            <h4 className="username">{name}</h4>
-            <p className="role">{position}</p>
+            <h4 className="username">{writer_name}</h4>
+            <p className="role">{writer_about}</p>
           </div>
         </div>
       </div>

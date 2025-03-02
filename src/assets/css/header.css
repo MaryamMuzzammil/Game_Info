@@ -14,7 +14,7 @@ header {
     z-index: 2222;
     width: 100%;
 }
-nav{
+.navbar{
     height: 100px;
     background: #000;
     width: 100%;
@@ -156,7 +156,7 @@ li.nav-item.login-btn {
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    width: 109px!important;
+    width: 111px!important;
 }
 .login-btn a.btn.btn-warning.fw-bold:hover{
     color: white;

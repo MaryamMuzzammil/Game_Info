@@ -1,0 +1,56 @@
+/* Container Styling */
+.container {
+    max-width: 1200px;
+  }
+ h5 {
+    color: white !important;
+  }
+  /* Styling for all Cards */
+  .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to top, #6c6c6c, #4a4a4a);
+    color: white !important;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+  
+  /* Heading Styling */
+  h1 {
+    color: #ffe600 !important;
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 1px 0px 4px white;
+    text-align: center;
+  }
+  
+  /* Button Styling */
+  .btn-light {
+    background-color: #ffe600 !important;
+    color: black !important;
+    font-weight: bold;
+  }
+  
+  .btn-light:hover {
+    background-color: #ffd700 !important;
+  }
+  
+  /* To-Do List Items */
+  .list-group-item {
+    background: white;
+    border-left: 5px solid #ffe600;
+    color: #4a4a4a;
+  }
+  
+  .list-group-item button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+  }
+  

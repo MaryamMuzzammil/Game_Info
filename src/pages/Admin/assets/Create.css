@@ -1,0 +1,123 @@
+.containerform {
+    max-width: 600px;
+    margin: auto;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.containerform h2 {
+    color: #ffe600;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-shadow: 1px 0px 4px white;
+    text-align: center;
+}
+
+.containerform form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerform label {
+    font-weight: 100;
+    color: #ffe600;
+}
+
+.containerform input, textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+.containerform .imgform{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffe600;
+}
+
+.containerform textarea {
+    resize: vertical;
+}
+
+.image-preview {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+ .containerform .submit_btn {
+    background: #ffe600;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit_btn:hover {
+    background: #ffe60087;
+}
+/* Pagination Container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+/* Pagination Buttons */
+.pagination button {
+    background-color: linear-gradient(to top, #6c6c6c, #4a4a4a);
+    border: 1px solid linear-gradient(to top, #6c6c6c, #4a4a4a);
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Pagination Hover Effect */
+.pagination button:hover {
+    background-color: #ffe600;
+    color: white;
+    border-color: #ffe600;
+}
+
+/* Active Page Styling */
+.pagination .active {
+    background-color: #ffe600;
+    color: white;
+    border-color: #ffe600;
+    font-weight: bold;
+}
+
+/* Disable Previous/Next Button */
+.pagination button:disabled {
+    background-color:#dddddd;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+/* Responsive Pagination */
+@media (max-width: 600px) {
+    .pagination {
+        flex-wrap: wrap;
+    }
+    .pagination button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
