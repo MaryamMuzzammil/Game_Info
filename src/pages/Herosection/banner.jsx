@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import banner1 from '../../assets/images/banner1.jpg';
 import banner2 from '../../assets/images/banner2.jpg';
 import banner3 from '../../assets/images/banner3.jpg';
@@ -23,7 +24,7 @@ return(
                 You Don’t Derserve
                 to win!</h5>
               <p>The most important thing is to try and inspire people so that they can be great in whatever they want to do.</p>
-                <a href="./contact/index.html" class="btn btn-outline-warning fw-bold">CONTACT US</a>
+              <Link to="/contact" class="btn btn-outline-warning fw-bold">CONTACT US</Link>
             </div>
           </div>
           <div class="carousel-item">
@@ -33,7 +34,7 @@ return(
                 You Don’t Derserve
                 to win!</h5>
               <p>I really think a champion is defined not by their wins, but how they can recover when they fall.</p>
-                <a href="./contact/index.html"  class="btn btn-outline-warning fw-bold">CONTACT US</a>
+              <Link to="/contact" class="btn btn-outline-warning fw-bold">CONTACT US</Link>
             </div>
           </div>
           <div class="carousel-item">
@@ -43,7 +44,7 @@ return(
                 You Don’t Derserve
                 to win!</h5>
               <p>If my mind can conceive it and my heart can believe it - then I can achieve it.</p>
-                <a href="./contact/index.html" class="btn btn-outline-warning fw-bold">CONTACT US</a>
+                <Link to="/contact" class="btn btn-outline-warning fw-bold">CONTACT US</Link>
             </div>
           </div>
         </div>

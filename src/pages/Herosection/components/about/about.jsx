@@ -83,7 +83,7 @@ const About = () => {
               </ul>
 
               <Link
-                to="/gallery"
+                to="/about"
                 className="text-capitalize about-btn btn-outline-warning"
                 data-bs-toggle="tooltip"
                 data-bs-title="Read More"

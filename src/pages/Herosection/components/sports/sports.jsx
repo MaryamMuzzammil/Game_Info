@@ -13,6 +13,7 @@ import '../../../../assets/css/herosection/sports.css'
 import { useEffect, useState } from "react";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { db } from "../../../../Firebase/config";
+import { Link } from 'react-router-dom';
 const Sports = () => {
 
   const [offers, setOffers] = useState([]);
@@ -64,9 +65,9 @@ const Sports = () => {
             <h5 className="my-3 fw-normal">{offer.offer_team}</h5>
             <p className="mb-5">{offer.offer_content}</p>
             <div className="d-flex justify-content-center align-items-center">
-              <a href={`./sports/index.html#${offer.offer_team.replace(/\s+/g, "")}`} className="icon-span rounded-2 bg-warning w-50">
+              <Link to={`/sports#${offer.offer_team.replace(/\s+/g, "")}`} className="icon-span rounded-2 bg-warning w-50">
                 Read more <i className="fa-solid fa-arrow-right-long"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
