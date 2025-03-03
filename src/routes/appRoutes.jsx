@@ -4,4 +4,4 @@ import { AuthRoute } from "./auth";
 import { AdminRoute } from "./Admin";
 
 
-export const AppRoutes = createBrowserRouter([...FrontendRoute, AuthRoute, ...AdminRoute])
+export const AppRoutes = createBrowserRouter([...FrontendRoute,...AuthRoute, ...AdminRoute])

@@ -1221,13 +1221,14 @@ h6 {
   padding: 20px 0;
   font-size: 14px;
   transition: all 0.3s;
-  border-top: 1px solid #ffc107;;
- 
+  border-top: 1px solid #ffc107;
+
 }
 
 #footer .copyright {
   text-align: center;
   color: #ffffff;
+
 }
 
 #footer .credits {

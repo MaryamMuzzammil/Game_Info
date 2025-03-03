@@ -35,7 +35,7 @@ hr:not([size]) {
 .hero {
     width: 100%; /* Use full width and adjust with max-width */
     height: 50vh; /* Use viewport height for responsiveness */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(225, 255, 0, 0.7)), url(../../images/g3.jpg);
+    background-image: linear-gradient(rgb(188 255 0 / 70%), rgb(95 107 6 / 70%)), url(../../images/g3.jpg);
     opacity: 0.8;
     justify-content: center;
     align-items: center;

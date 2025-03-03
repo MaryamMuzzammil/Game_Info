@@ -1,14 +1,14 @@
-import teamgirl from '../../../../assets/images/teamgirl.jpg';
-import chess from '../../../../assets/images/chess.jpg';
-import volleyball from '../../../../assets/images/volleyball2.jpg';
-import athletics from '../../../../assets/images/athletics.jpg';
-import banner2 from '../../../../assets/images/banner2.jpg';
-import swimming from '../../../../assets/images/swimming.jpg';
-import judo from '../../../../assets/images/judo.jpg';
-import billiard from '../../../../assets/images/billiards.jpg';
-import tennis from '../../../../assets/images/tennis.jpg';
-import golf from '../../../../assets/images/golf.jpg';
-import cycling from '../../../../assets/images/cycling.jpg';
+// import teamgirl from '../../../../assets/images/teamgirl.jpg';
+// import chess from '../../../../assets/images/chess.jpg';
+// import volleyball from '../../../../assets/images/volleyball2.jpg';
+// import athletics from '../../../../assets/images/athletics.jpg';
+// import banner2 from '../../../../assets/images/banner2.jpg';
+// import swimming from '../../../../assets/images/swimming.jpg';
+// import judo from '../../../../assets/images/judo.jpg';
+// import billiard from '../../../../assets/images/billiards.jpg';
+// import tennis from '../../../../assets/images/tennis.jpg';
+// import golf from '../../../../assets/images/golf.jpg';
+// import cycling from '../../../../assets/images/cycling.jpg';
 import '../../../../assets/css/herosection/sports.css'
 import { useEffect, useState } from "react";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
@@ -72,10 +72,6 @@ const Sports = () => {
         </div>
       ))}
     </div>
-      
-
-        
-
       </div>
   
        

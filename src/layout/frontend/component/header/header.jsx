@@ -24,7 +24,7 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav ms-auto md-2 mb-lg-0">
               <li className="nav-item fw-bold">
-                <Link className="nav-link active anchor" aria-current="page" to="/">
+                <Link className="nav-link anchor" aria-current="page" to="/">
                   HOME
                 </Link>
               </li>

@@ -7,6 +7,7 @@
 .about-title {
     color: #fff;
     letter-spacing: 1.5px;
+    text-align: start;
 }
 .about-btn{
     color: var(--yellow);

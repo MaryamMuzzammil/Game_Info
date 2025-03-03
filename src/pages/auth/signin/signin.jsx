@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-
+import '../../../assets/css/signin.css'
 const Signin =()=>{
     return(
         <>
-        <section>
+        <section className="body">
       <span className="box"></span>
         <span className="box"></span>
         <span className="box"></span>

@@ -120,20 +120,6 @@ li .anchor:hover{
     color: var(--yellow);
     transition: all 0.5s;
 }
-li .active{
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 19px;
-    margin-left: 50px;
-    padding: 33px 0;
-    color: var(--yellow);
-    transition: all 0.5s;
-    border-bottom:  3px solid var(--yellow);
-  
-}
-a.nav-link.active.anchor {
-    color: var(--yellow) !important;
-}
 .sports{
     background: #000;
     color: var(--yellow);

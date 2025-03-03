@@ -9,7 +9,7 @@ import '../../../../assets/css/footer.css';
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
+      <footer className="footers">
         <div className="container">
           <div className="row">
             {/* Logo and Description */}
@@ -90,7 +90,7 @@ const Footer = () => {
                   <li><Link to="/about">About</Link></li>
                   <li><Link to="/sports">Sports</Link></li>
                   <li><Link to="/contact">Contact</Link></li>
-                  <li><Link to="/login">Login</Link></li>
+                  <li><Link to="/signin">Login</Link></li>
                 </ul>
               </div>
             </div>
@@ -100,14 +100,14 @@ const Footer = () => {
               <div className="widget4">
                 <h5>Game Links</h5>
                 <ul>
-                  <li><Link to="/sports#Football">Football</Link></li>
-                  <li><Link to="/sports#Athletics">Athletics</Link></li>
-                  <li><Link to="/sports#Chess">Chess</Link></li>
-                  <li><Link to="/sports#Judo">Judo</Link></li>
-                  <li><Link to="/sports#Volleyball">Volleyball</Link></li>
-                  <li><Link to="/sports#Tennis">Tennis</Link></li>
-                  <li><Link to="/sports#Golf">Golf</Link></li>
-                  <li><Link to="/sports#MotorcycleRacing">Motorcycle Racing</Link></li>
+                  <li><Link to="#Football">Football</Link></li>
+                  <li><Link to="#Athletics">Athletics</Link></li>
+                  <li><Link to="#Chess">Chess</Link></li>
+                  <li><Link to="#Judo">Judo</Link></li>
+                  <li><Link to="#Volleyball">Volleyball</Link></li>
+                  <li><Link to="#Tennis">Tennis</Link></li>
+                  <li><Link to="#Golf">Golf</Link></li>
+                  <li><Link to="#MotorcycleRacing">Motorcycle Racing</Link></li>
                 </ul>
               </div>
             </div>

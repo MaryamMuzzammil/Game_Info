@@ -61,20 +61,20 @@ const About = () => {
                 succeed.
               </p>
               <ul>
-                <li style={{ color: "#fff", listStyleType: "circle",fontSize: "18px" }}>
+                <li style={{ color: "#fff", listStyleType: "circle",fontSize: "18px", textAlign:"start" }}>
                   <strong>Personalized Training Programs:</strong> Our expert
                   coaches design customized training plans tailored to your
                   specific needs and goals.
                 </li>
                 <br/>
-                <li style={{ color: "#fff", listStyleType: "circle" ,fontSize: "18px"}}>
+                <li style={{ color: "#fff", listStyleType: "circle" ,fontSize: "18px",textAlign:"start"}}>
                   <strong>Expert Coaching:</strong> Benefit from the guidance of
                   seasoned professionals with years of experience in various
                   sports.
                 </li>
                 <br/>
                 <li
-                  style={{ color: "#fff", listStyleType: "circle" }}>
+                  style={{ color: "#fff", listStyleType: "circle",textAlign:"start" }}>
                   <strong>Interactive Training Sessions:</strong> Engage in live or on-demand
                   training sessions that provide hands-on instruction and feedback. Our sessions
                   cover a wide range of sports and fitness areas, ensuring you get the practice

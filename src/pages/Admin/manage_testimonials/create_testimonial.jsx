@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { addDoc, collection, getDoc, doc, updateDoc } from "firebase/firestore";
 import { db } from "../../../Firebase/config";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import "../assets/Create.css";
