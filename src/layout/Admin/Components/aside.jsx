@@ -1,6 +1,22 @@
 import { Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import { useNavigate } from "react-router-dom"; 
+import Signup from "../../../pages/auth/signup/signup";
+import { signOut,getAuth } from "@firebase/auth";
 
 const SideBar = () => {
+
+  const navigate = useNavigate(); // ✅ Initialize navigate
+  const auth = getAuth();
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate("/signup")
+    } catch (error) {
+      console.error("logout error:",error.message)
+    }
+  }
 
   return (
     <>
@@ -47,12 +63,12 @@ const SideBar = () => {
             <span> <Link to="/news">News</Link></span>
             </Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link collapsed" href="pages-login.html">
-            <i className="bi bi-box-arrow-in-right"></i>
-            <span>Logout</span>
-          </a>
-        </li>
+        <li className="nav-itemLogout">
+            <button className="nav-link collapsed logout-btn" onClick={handleLogout}>
+              <i className="bi bi-box-arrow-in-right"></i>
+              <span>Logout</span>
+            </button>
+          </li>
 
       </ul>
 

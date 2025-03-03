@@ -9,7 +9,7 @@ const Dashboard = () => {
   const [bpStatus, setBpStatus] = useState("");
   const [todoList, setTodoList] = useState([]);
   const [task, setTask] = useState("");
-
+  
   // Update time every second
   useEffect(() => {
     const timer = setInterval(() => {
