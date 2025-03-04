@@ -62,7 +62,7 @@ const Football = () => {
   ];
 
   return (
-    <section className="about-section" id="Football">
+    <section className="about-section" id="football">
       <div className="container text-center common-title fw-bold">
         <h2 className="common-heading fw-bolder mb-4">SPORTS DETAILS</h2>
         <p style={{ margin: "0 auto" }}>

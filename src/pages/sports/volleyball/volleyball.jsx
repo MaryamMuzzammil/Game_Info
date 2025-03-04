@@ -37,7 +37,7 @@ const Volleyball = () => {
   ];
 
   return (
-    <section className="about-section" id="Volleyball">
+    <section className="about-section" id="volleyball">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 d-flex flex-column justify-content-center align-items-start">

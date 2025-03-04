@@ -51,22 +51,19 @@ const Header = () => {
                 </Link>
                 <ul className="dropdown-menu sport" aria-labelledby="navbarDropdownMenuLink">
                   {[
-                    "Football",
-                    "Badminton",
-                    "Athletics",
-                    "Chess",
-                    "Judo",
-                    "Swimming",
-                    "Volleyball",
-                    "Tennis",
-                    "Golf",
-                    "Billiards",
-                    "Motorcycling",
+                    "football",
+                    "athletics",
+                    "chess",
+                    "judo",
+                    "volleyball",
+                    "tennis",
+                    "golf",
+                    "motorcycling",
                   ].map((game) => (
                     <li key={game}>
-                      <Link className="dropdown-item sports" to={`/sports#${game}`}>
+                      <a  className="dropdown-item sports" href={`/sports#${game}`}>
                         {game}
-                      </Link>
+                      </a >
                     </li>
                   ))}
                 </ul>
