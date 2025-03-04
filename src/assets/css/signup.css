@@ -193,3 +193,13 @@ input[type="button"] {
     text-transform: uppercase;
     margin-bottom: 2px;
 }
+.arrowbutton {
+    padding: 25px;
+    font-size: 45px;
+    padding-left: 25px;
+    color: white;
+	cursor: pointer;
+}
+.arrowbutton:hover {
+	color: black;
+}

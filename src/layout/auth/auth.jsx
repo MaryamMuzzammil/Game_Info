@@ -5,8 +5,6 @@ export const AuthLayout = () => {
   return (
     <>
   <Outlet/>
-  <Footer/>
-
     </>
   );
 };

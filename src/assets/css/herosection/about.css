@@ -88,6 +88,7 @@ h1.fw-bolder.text-capitalize.common-heading{
 }
 .col-12.col-md-12.col-lg-6.d-flex.flex-column.justify-content-center.align-items-start.aos-init.aos-animate {
     margin-top: -90px;
+    z-index: 1;
 }
 a.text-capitalize.about-btn.btn-outline-warning {
     color: rgb(0, 0, 0);
