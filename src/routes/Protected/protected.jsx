@@ -7,6 +7,6 @@ const Protected = () => {
     if (loading) {
         return <div>loading........</div>
     }
-    return user ? <Outlet/> : <Navigate to = "/signup" replace/>
+    return user ? <Outlet/> : <Navigate to = "/signin" replace/>
 }
 export default Protected;
