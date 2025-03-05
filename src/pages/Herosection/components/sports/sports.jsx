@@ -45,7 +45,7 @@ const Sports = () => {
 
   return (
     <>
-      <section className="sports-section" id="Sports">
+      <section className="sports-section" id="sports">
       <div className="container text-center common-title fw-bold">
         <h2 className="common-heading fw-bolder mb-4">SPORTS & GAMES</h2>
         <p style={{margin: "0 auto"}}>Playing sports helps you stay in shape, teaches you how to organize your time, boosts friendships, and builds relationships with your peers and adults. Through athletics, you gain skills that can best be acquired on a court, track, or field.</p>
