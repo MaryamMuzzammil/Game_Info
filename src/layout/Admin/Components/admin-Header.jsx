@@ -14,10 +14,10 @@ const AdminHeader = () => {
       setUser(currentUser);
     });
 
-    return () => unsubscribe(); // Cleanup on unmount
+    return () => unsubscribe();
   }, []);
 
-  // ✅ Logout Function
+
   const handleLogout = async () => {
     try {
       await signOut(auth);
@@ -154,13 +154,13 @@ const AdminHeader = () => {
                   className="rounded-circle"
                 />
                 <span className="d-none d-md-block dropdown-toggle ps-2">
-                  {user ? user.displayName || "User" : "Guest"}
+                {user ? user.displayName || user.email.split("@")[0] : "Guest"}
                 </span>
               </a>
 
               <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                 <li className="dropdown-header">
-                  <h6>{user ? user.displayName || "User" : "Guest"}</h6>
+                <h6>{user ? user.displayName || user.email.split("@")[0] : "Guest"}</h6>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
@@ -168,25 +168,7 @@ const AdminHeader = () => {
 
                 {user && (
                   <>
-                    <li>
-                      <a className="dropdown-item d-flex align-items-center" href="users-profile.html">
-                        <i className="bi bi-person"></i>
-                        <span>My Profile</span>
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-
-                    <li>
-                      <a className="dropdown-item d-flex align-items-center" href="users-profile.html">
-                        <i className="bi bi-gear"></i>
-                        <span>Account Settings</span>
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
+                   
 
                     <li>
                       <button className="dropdown-item d-flex align-items-center" onClick={handleLogout}>
