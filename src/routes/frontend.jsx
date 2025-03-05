@@ -1,7 +1,7 @@
 import { FrontLayout } from "../layout/frontend";
 import AboutPage from "../pages/aboutpage/aboutus";
 import Contact from "../pages/contact/contact";
-import Banner from "../pages/Herosection/banner";
+import Home from "../pages/Herosection/banner";
 import SportsPage from "../pages/sports/sports";
 
 
@@ -12,7 +12,7 @@ export const FrontendRoute = [
         children:[
             {
                 path: '/',
-                element:<Banner/>
+                element:<Home/>
             },
             {
                 path: '/about',
