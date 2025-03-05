@@ -14,7 +14,9 @@
     "axios": "^1.8.1",
     "bootstrap": "^5.3.3",
     "firebase": "^11.3.1",
+    "gh-pages": "^6.3.0",
     "lightgallery.js": "^1.4.0",
+    "Package": "^0.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-firebase-hooks": "^5.1.1",
@@ -23,11 +25,13 @@
     "react-toastify": "^11.0.5",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
+ "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"npm run  build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,5 +50,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://MaryamMuzzammil.github.io/Game_Info"
 }
